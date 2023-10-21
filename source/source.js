@@ -65,12 +65,32 @@ async function fetchData() {
         console.error('Error fetching data:', error)
         throw error;
     }
-}
+};
 
 fetchData()
 
 function sendResponse() {
     const noteTitle = document.getElementById('noteTitle').value;
 
-    console.log(noteTitle)
+    console.log(noteTitle);
+
+    const dataToSend = {
+    title: noteTitle
+  };
+
+  console.log(dataToSend)
+
+  //async function
+  async function sendData() {
+    try{
+        const response = await fetch('https://todo-react.up.railway.app/api/tasks/',{
+            method: 'POST',
+            headers: {
+                'content-type': response/json
+            }
+        })
+    } catch (error) {
+
+    }
 }
+};
