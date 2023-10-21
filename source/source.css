@@ -6,13 +6,11 @@ body{
 }
 #demo{
   margin-top: 125px;
-    display: flex;
-    justify-content: center;
     align-items: center;
 }
 table{
   border-collapse: collapse;
-  width: 9rem;
+  width: 29rem;
 }
 th, td{
   border: 1px solid #fff;
@@ -21,6 +19,7 @@ th, td{
 }
 th{
   font-weight: bold;
+  border: 2px solid #fff;
 }
 input, textarea{
   border: none;
